@@ -1,13 +1,6 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {  RouterProvider } from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import Error from './pages/Error'
-
-const routes = createBrowserRouter([
-   {path: '/', index: true, element: <Home />, errorElement: <Error />},
-   {path: '/products', element: <Products />},
-])
+import routes from './routes/routes'
 
 const App = () => {
   return <RouterProvider router={routes}/>
