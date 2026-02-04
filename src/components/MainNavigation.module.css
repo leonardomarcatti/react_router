@@ -14,10 +14,16 @@
 .list a {
   text-decoration: none;
   color: var(--color-primary-400);
+   padding: 5px 10px;
 }
 
-.list a:hover,
-.list a.active {
+.list a:hover {
   color: var(--color-primary-800);
-  text-decoration: underline;
+}
+
+.list a.active {
+   background-color: var(--color-primary-800);
+   color: black;
+   padding: 5px 10px;
+   border-radius: 5px;
 }

@@ -6,9 +6,10 @@ import Layout from '../layout/Layout'
 
 const routes = createBrowserRouter([
    {path: '/', element: <Layout/>, children: [
-      { index: true, element: <Home />, errorElement: <Error /> },
+      { index: true, element: <Home /> },
       { path: '/products', element: <Products /> },
-   ]}
+   ], errorElement: <Error />
+}
 ])
 
 

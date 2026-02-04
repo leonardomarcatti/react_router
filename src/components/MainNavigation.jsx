@@ -1,12 +1,12 @@
-import styles from './mainnavigation.module.css'
-import { Link } from 'react-router-dom'
+import styles from './MainNavigation.module.css'
+import { NavLink } from 'react-router-dom'
 
 const MainNavigation = () => {
    return <header className={styles.header}>
       <nav>
          <ul className={styles.list}>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/products'>Products</Link></li>
+            <li><NavLink to='/' className={({isActive}) => isActive? styles.active : ''}>Home</NavLink></li>
+            <li><NavLink to='/products' className={({ isActive }) => isActive ? styles.active : ''}>Products</NavLink></li>
          </ul>
       </nav>
    </header>
