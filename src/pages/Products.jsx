@@ -8,7 +8,7 @@ const Products = () => {
          {
             products.map(el => {
                return <li key={el.id}>
-                     <Link to={el.name} >{el.name}</Link>
+                     <Link to={el.name}>{el.name}</Link>
                   </li>
             })
          }

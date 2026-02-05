@@ -8,8 +8,8 @@ import ProductDetails from '../pages/ProductDetails'
 const routes = createBrowserRouter([
    {path: '/', element: <Layout/>, children: [
       { index: true, element: <Home /> },
-      { path: '/products', element: <Products /> },
-      { path: '/products/:id', element: <ProductDetails /> },
+      { path: 'products', element: <Products /> },
+      { path: 'products/:id', element: <ProductDetails /> },
    ], errorElement: <Error />
 }
 ])
